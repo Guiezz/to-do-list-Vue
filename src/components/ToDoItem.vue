@@ -1,7 +1,6 @@
 <template>
   <div>
     <input type="checkbox" :checked="done" @change="$emit('toggle')" />
-    <!--<span :class="{ 'task-done': done }">{{ task }}</span> -->
     <span v-if="done" style="text-decoration: line-through">{{ task }}</span>
     <span v-else>{{ task }}</span>
   </div>
